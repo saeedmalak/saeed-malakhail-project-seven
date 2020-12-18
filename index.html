@@ -16,33 +16,36 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <title>Saeed Malakhail Portfolio</title>
 </head>
-<body class="animate-in">
+<body class="animate-in" id="bodyStyles">
 
-    <header>
+    <header id="headerTheme" class="darkTheme">
         <nav>
             <a href="./nav.html">
                 <img src="./assets/menuIcon.svg" alt="hamburger menu icon, when clicked will show the full page navigation list">
             </a>
+            <button class="switchThemesBtn">
+                <i id="switchThemes" class="fas fa-adjust switchThemes" aria-hidden="true"></i>
+            </button>
         </nav>
 
-        <div class=headingEmptyContainer>
+        <div class=headingEmptyContainer id="headingEmptyContainer">
         </div>
-        <div class="profileContainer">
+        <div class="profileContainer" id="profileContainer">
             <img src="./assets/profilePicture.jpg" alt="profile picture of Saeed Malakhail">
             <h1><span class="stylingTitle">Hi!</span> I'm Saeed Malakhail</h1>
             <p>Front End Developer</p>
-            <button class="headerBtn"><a href="https://drive.google.com/file/d/1qk0iXz5uilDaJcI0JG9-rcR8PB2IisKA/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></button>
+            <button class="headerBtn" id="headerBtn"><a href="https://drive.google.com/file/d/1qk0iXz5uilDaJcI0JG9-rcR8PB2IisKA/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></button>
         </div>
     </header>
 
     <section class="servicesSection" id="servicesSection">
         <h2>skills & services</h2>
-        <div class="servicesContainer wrapper">
+        <div class="servicesContainer wrapper" id="servicesContainer">
             <img src="./assets/decorLine.jpg" alt="decoration line">
             <h3>During the last three years, I've been working on different projects to improve my skills in social media marketing and web
             development. Here are my top skills & services.</h3>
             <div class="skillsContainer">
-                <ul>
+                <ul id="skillsList">
                     <li>
                         <i class="fab fa-html5" aria-hidden="true"></i>
                         <span>HTML5</span> 

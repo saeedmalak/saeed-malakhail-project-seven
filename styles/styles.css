@@ -242,6 +242,7 @@ html {
   --dark-blue: hsl(240, 38%, 20%);
   --grayish-blue: hsl(240, 18%, 77%);
   --dark-grayish-blue:#8585AC;
+  --button-background: #ffffff;
   /** SHADOWS **/
   --box-shadow-1: 0 4rem 5rem -3rem rgba(36,36,113,0.50);
   --box-shadow-2: 0 1.5rem 2rem -1rem rgba(36,36,113,0.10);
@@ -317,6 +318,21 @@ header {
           align-items: center;
 }
 
+header .switchThemesBtn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+header .switchThemesBtn i {
+  margin-bottom: 20px;
+  cursor: pointer;
+  padding: 10px 5px;
+  font-size: 3rem;
+  color: #e11416;
+  font-weight: 900;
+}
+
 header .headingEmptyContainer {
   position: absolute;
   top: 15%;
@@ -375,7 +391,7 @@ header .profileContainer .headerBtn:after {
   height: 100%;
   top: 0;
   left: 0;
-  background: #ffffff;
+  background: var(--button-background);
   z-index: -1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;

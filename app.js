@@ -8,6 +8,61 @@ $(function () {
 
 });
 
+// Switch to light or dark theme on clickEvent
+document.addEventListener('click', function (event) {
+
+    // If the clicked element doesn't have the right selector, bail
+    if (!event.target.matches('.switchThemes')) return;
+
+    // Don't follow the link
+    event.preventDefault();
+
+    let element = document.getElementById("headerTheme");
+
+    if (element.classList.contains("darkTheme")) {
+        element.classList.add("lightTheme");
+        element.classList.remove("darkTheme");
+
+        element.style.backgroundImage = "url(./assets/lightThemeHeaderBackground.jpg)";
+        document.getElementById("headingEmptyContainer").style.backgroundColor = "#E6E6E6";
+        document.getElementById("profileContainer").style.color = "#333333";
+        document.getElementById("headerBtn").style.border = "3px solid #000000";
+        document.documentElement.style.setProperty("--button-background", "#000000");
+
+        document.getElementById("servicesSection").style.backgroundImage = "url(./assets/lightThemeServicesSection.jpg)";
+        document.querySelector("#servicesContainer h3").style.color = "#333333";
+        document.querySelector("#servicesContainer img").style.color = "#333333";
+        // for (icon of document.getElementsByTagName("i")) { icon.style.color = "#888888"}; this works!
+        const ul = document.getElementById('skillsList');
+        const iconItems = ul.querySelectorAll('li > i');
+        const spanItems = ul.querySelectorAll('li > span');
+        for (icon of iconItems) { icon.style.color = "#888888" };
+        for (span of spanItems) { span.style.color = "#888888" };
+
+    }
+    else {
+        element.classList.add("darkTheme");
+        element.classList.remove("lightTheme");
+
+        element.style.backgroundImage = "url(./assets/background.jpg)";
+        document.getElementById("headingEmptyContainer").style.backgroundColor = "#181818";
+        document.getElementById("profileContainer").style.color = "#ffffff";
+        document.getElementById("headerBtn").style.border = "3px solid #ffffff";
+        document.documentElement.style.setProperty("--button-background", "#ffffff");
+
+        document.getElementById("servicesSection").style.backgroundImage = "url(./assets/servicesAndToolsSection.jpg)";
+        document.querySelector("#servicesContainer h3").style.color = "#ffffff";
+        document.querySelector("#servicesContainer img").style.color = "#ffffff";
+        // document.querySelector("#skillsContainer li i").style.color = "#cccccc";
+        const ul = document.getElementById('skillsList');
+        const iconItems = ul.querySelectorAll('li > i');
+        const spanItems = ul.querySelectorAll('li > span');
+        for (icon of iconItems) { icon.style.color = "#cccccc" };
+        for (span of spanItems) { span.style.color = "#cccccc" };
+    }
+
+}, false);
+
 // credit goes to Kasper Mikiewicz for providing the code below
 // https://kasper.io/How-to-create-transition-effect-between-pages/ 
 window.addEventListener("beforeunload", function () {

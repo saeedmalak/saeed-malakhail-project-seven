@@ -10,6 +10,21 @@ header {
     justify-content: center;
     align-items: center;
 
+    .switchThemesBtn {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+
+        i {
+            margin-bottom: 20px;
+            cursor: pointer;
+            padding: 10px 5px;
+            font-size: 3rem;
+            color: #e11416;
+            font-weight: 900;
+        }
+    }
+
     .headingEmptyContainer {
         position: absolute;
         top: 15%;
@@ -65,7 +80,7 @@ header {
             height: 100%;
             top: 0;
             left: 0;
-            background: #ffffff;
+            background: var(--button-background);
             z-index: -1;
             transition: all 0.3s;
         }
