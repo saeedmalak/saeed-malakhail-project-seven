@@ -1,0 +1,74 @@
+.navOverlayHeaderPage {
+    min-height: 100vh;
+    background-image: url("../assets/navOverlayBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    ul {
+        margin-top: 13%;
+    }
+
+    li {
+        margin-bottom: 40px;
+    }
+
+    a {
+        font-size: 72px;
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    a:hover, a:focus {
+        color: #e11416;
+    }
+
+    .getInTouchOverlayPage  {
+
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+
+        div {
+            margin-right: 80px;
+        }
+
+        .emailContainer {
+            margin-left: 40px;
+        }
+
+        .aboutMeIconsOverlayPage {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 20px;
+
+            li {
+                margin-bottom: 20px;
+            }
+
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        h4 {
+            font-size: 2rem;
+            color: #cccccc;
+            font-weight: 500;
+        }
+
+        p, a {
+            font-size: 2rem;
+            color: #e11416;
+            font-weight: 700;
+        }
+
+        a:hover, a:focus {
+            color: #ffffff;
+        }
+    }
+
+}

@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Slick carousel  -->
-    
     <!-- Google fonts  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -18,19 +16,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <title>Saeed Malakhail Portfolio</title>
 </head>
-<body>
+<body class="animate-in">
 
     <header>
+        <nav>
+            <a href="./nav.html">
+                <img src="./assets/menuIcon.svg" alt="hamburger menu icon, when clicked will show the full page navigation list">
+            </a>
+        </nav>
+
         <div class=headingEmptyContainer>
         </div>
         <div class="profileContainer">
             <img src="./assets/profilePicture.jpg" alt="profile picture of Saeed Malakhail">
             <h1><span class="stylingTitle">Hi!</span> I'm Saeed Malakhail</h1>
             <p>Front End Developer</p>
+            <button class="headerBtn"><a href="https://drive.google.com/file/d/1qk0iXz5uilDaJcI0JG9-rcR8PB2IisKA/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></button>
         </div>
     </header>
 
-    <section class="servicesSection">
+    <section class="servicesSection" id="servicesSection">
         <h2>skills & services</h2>
         <div class="servicesContainer wrapper">
             <img src="./assets/decorLine.jpg" alt="decoration line">
@@ -92,7 +97,7 @@
     </section>
 
     <!-- Projects Carousel Section -->
-    <section class="projectsSection">
+    <section class="projectsSection" id="projectsSection">
         <h2>projects</h2>
         <div class="carouselSection">
             <div class="slider">
@@ -191,7 +196,7 @@
     
     
     <!-- About section -->
-    <section class="aboutSection">
+    <section class="aboutSection" id="aboutSection">
         <h2>about</h2>
         <figure>
             <img src="./assets/aboutMePicture.jpg" alt="A picture of Saeed Malakhail vigorously thinking about his next client's project!">
@@ -212,7 +217,7 @@
         </div>
     </section>
 
-    <section class="contactSection">
+    <section class="contactSection" id="contactSection">
         <h2>contact</h2>
         <div class="getInTouch">
             <h4>want to talk?</h4>

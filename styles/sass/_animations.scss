@@ -1,3 +1,27 @@
+// credit goes to Kasper Mikiewicz for providing the code below
+// https://kasper.io/How-to-create-transition-effect-between-pages/ 
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 @keyframes slideInNext {
     0%{
         transform: translateX(50%);

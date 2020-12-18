@@ -8,6 +8,13 @@ $(function () {
 
 });
 
+// credit goes to Kasper Mikiewicz for providing the code below
+// https://kasper.io/How-to-create-transition-effect-between-pages/ 
+window.addEventListener("beforeunload", function () {
+    document.body.classList.add("animate-out");
+});
+
+
 /* ========== SLIDER LOGIC ==========
 1. Create selectors for the slider container, each slide, the next button and the previous button
 2. Clone the first slide and append it at the end of the slides container

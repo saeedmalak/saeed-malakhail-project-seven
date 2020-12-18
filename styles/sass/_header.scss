@@ -27,14 +27,71 @@ header {
         color: #ffffff;
         img {
             position: absolute;
-            left: 50%;
+            left: 45%;
             top: 19%;
             width: 236px;
             border-radius: 50%;
         }
+
+        h1 {
+            margin-top: 20%;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .headerBtn {
+            border: none;
+            font-size: 2.5rem;
+            color: #ffffff;
+            background: none;
+            border: 3px solid #fff;
+            cursor: pointer;
+            display: inline-block;
+            margin: 15px 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            outline: none;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .headerBtn:after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #ffffff;
+            z-index: -1;
+            transition: all 0.3s;
+        }
+
+        .headerBtn:hover,
+        .headerBtn:active {
+            color: #e11416;
+        }
+
+        .headerBtn:hover:after,
+        .headerBtn:active:after {
+            width: 100%;
+        }
+
+        .headerBtn a {
+            display: inline-block;
+            padding: 25px 80px;
+        }
+
+        .headerBtn a:hover, .headerBtn a:active, .headerBtn a:focus {
+            color: #e11416;
+        }
+        
     }
     
     .stylingTitle {
-        color: #e11416
+        color: #e11416;
     }
 }

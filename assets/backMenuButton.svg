@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 20" width="36" height="20">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="back">
+		<path id="burger line" class="shp0" d="M0.15 9.99L9.34 0.8L10.75 2.21L1.56 11.4L0.15 9.99Z" />
+		<path id="burger line" class="shp0" d="M1.56 8.6L10.75 17.79L9.34 19.21L0.15 10.01L1.56 8.6Z" />
+		<path id="burger line" class="shp0" d="M2 9L23 9L23 11L2 11L2 9Z" />
+		<path id="burger line" class="shp0" d="M25 9L36 9L36 11L25 11L25 9Z" />
+	</g>
+</svg>
