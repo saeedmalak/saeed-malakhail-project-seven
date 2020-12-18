@@ -1,0 +1,40 @@
+header {
+    min-height: 100vh;
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .headingEmptyContainer {
+        position: absolute;
+        top: 15%;
+        left: 33.3%;
+        background-color: #181818;
+        opacity: 95%;
+        z-index: 10;
+        width: 636px;
+        height: 708px;
+    }
+
+    .profileContainer {
+        text-align: center;
+        z-index: 20;
+        color: #ffffff;
+        img {
+            position: absolute;
+            left: 50%;
+            top: 19%;
+            width: 236px;
+            border-radius: 50%;
+        }
+    }
+    
+    .stylingTitle {
+        color: #e11416
+    }
+}

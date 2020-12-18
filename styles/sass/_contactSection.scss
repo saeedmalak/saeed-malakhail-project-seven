@@ -1,0 +1,125 @@
+.contactSection {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../assets/contactSection.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    
+    h2 {
+        position: absolute;
+        left: 50%;
+    };
+
+    .contactMiddleContainer {
+        background-color: #C4C4C4;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        margin-right: -25px;
+
+        p {
+            font-size: 20rem;
+            color: #e11416;
+            font-weight: 500;
+        }
+    }
+
+    .formSection {
+        background-color: #e11416;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        h3 {
+            font-size: 3.2rem;
+            line-height: 54px;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 80px 40px 0;
+        }
+
+        .formDetails {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            #name, #email, #message, button {
+                font-size: 1.4rem;
+                color: #ffffff;
+                border: none;
+                width: 65%;
+            }
+
+            #name, #email, #message {
+                line-height: 24px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                padding: 15px;
+                background-color: #e11416;
+                border-bottom: 1px solid #ffffff;
+            }
+
+            #name:hover, #email:hover, #message:hover, #name:focus, #email:focus, #message:focus {
+                background-color: rgba(190, 190, 193, 0.3);
+            }
+
+            #message {
+                resize: none;
+            }
+
+            button {
+                font-weight: 700;
+                background-color: #181818;
+                height: 60px;   
+            }
+
+            button:hover, button:focus {
+                background-color: #c4c4c4;
+            }
+        }
+    }
+
+    .getInTouch {
+        align-self: end;
+        padding-bottom: 40px;
+
+        h4, p, ul li {
+            font-size: 2rem;
+            text-align: right;
+        }
+
+        h4 {
+            font-weight: 500;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        p, a {
+            font-weight: 700;
+            color: #e11416;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+                margin-left: 10px;
+            }
+        }
+    }
+}
