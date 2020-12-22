@@ -19,24 +19,33 @@
 <body class="animate-in" id="bodyStyles">
 
     <header id="headerTheme" class="darkTheme">
+
         <nav>
-            <a href="./nav.html">
-                <img src="./assets/menuIcon.svg" alt="hamburger menu icon, when clicked will show the full page navigation list">
-            </a>
-            <button class="switchThemesBtn">
-                <i id="switchThemes" class="fas fa-adjust switchThemes" aria-hidden="true"></i>
-            </button>
+            <div class="menuContainer">
+                <a href="./nav.html">
+                    <img src="./assets/menuIcon.svg" alt="hamburger menu icon, when clicked will show the full page navigation list">
+                </a>
+            </div>
+            <div class="darkLightContainer">
+                <button class="switchThemesBtn">
+                    <i id="switchThemes" class="fas fa-adjust switchThemes" aria-hidden="true"></i>
+                </button>
+            </div>
         </nav>
 
-        <div class=headingEmptyContainer id="headingEmptyContainer">
-        </div>
-        <div class="profileContainer" id="profileContainer">
-            <img src="./assets/profilePicture.jpg" alt="profile picture of Saeed Malakhail">
-            <h1><span class="stylingTitle">Hi!</span> I'm Saeed Malakhail</h1>
-            <p>Front End Developer</p>
-            <button class="headerBtn" id="headerBtn"><a href="https://drive.google.com/file/d/1qk0iXz5uilDaJcI0JG9-rcR8PB2IisKA/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></button>
+        <div class="verticalLineOne"></div>
+        <div class="verticalLineTwo"></div>
+
+        <h1><span class="stylingTitle">Hi!</span> I'm Saeed Malakhail</h1>
+
+        <div class=headingContainer id="headingContainer">
+                <img src="./assets/profilePicture.jpg" alt="profile picture of Saeed Malakhail">
+                <p>Front End Developer</p>
+                <button class="headerBtn" id="headerBtn"><a href="https://drive.google.com/file/d/1qk0iXz5uilDaJcI0JG9-rcR8PB2IisKA/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume ➡ </a></button>
         </div>
     </header>
+
+    <main>
 
     <section class="servicesSection" id="servicesSection">
         <h2>skills & services</h2>
@@ -44,58 +53,61 @@
             <img src="./assets/decorLine.jpg" alt="decoration line">
             <h3>During the last three years, I've been working on different projects to improve my skills in social media marketing and web
             development. Here are my top skills & services.</h3>
-            <div class="skillsContainer">
-                <ul id="skillsList">
-                    <li>
-                        <i class="fab fa-html5" aria-hidden="true"></i>
-                        <span>HTML5</span> 
-                    </li>
-                    <li>
-                        <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                        <span>CSS3</span>
-                    </li>
-                    <li>
-                        <i class="fab fa-sass" aria-hidden="true"></i>
-                        <span>Sass</span>
-                    </li>
-                    <li>
-                        <i class="fab fa-js" aria-hidden="true"></i>
-                        <span>JavaScript</span>
-                    </li>
-                    <li>
-                        <i class="devicon-jquery-plain"></i>
-                        <span>jQuery</span>
-                    </li>
-                    <li>
-                        <i class="fab fa-react" aria-hidden="true"></i>
-                        <span>React</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-cog" aria-hidden="true"></i>
-                        <span>Rest APIs</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-folder-open" aria-hidden="true"></i>
-                        <span>Firebase</span>
-                    </li>
-                    <li>
-                        <i class="devicon-git-plain"></i>
-                        <span>Git</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-search-dollar"></i>
-                        <span>SEO</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-funnel-dollar"></i>
-                        <span>Sales Funnel Design</span>
-                    </li>
-                    <li>
-                        <i class="far fa-thumbs-up"></i>
-                        <span>Social Media Marketing</span>
-                    </li>
-                </ul>
-            </div>
+        </div>
+
+        <div class="verticalTabletMobileViews"></div>
+
+        <div class="skillsContainer">
+            <ul id="skillsList" class="skillsList">
+                <li>
+                    <i class="fab fa-html5" aria-hidden="true"></i>
+                    <span>HTML5</span>
+                </li>
+                <li>
+                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                    <span>CSS3</span>
+                </li>
+                <li>
+                    <i class="fab fa-sass" aria-hidden="true"></i>
+                    <span>Sass</span>
+                </li>
+                <li>
+                    <i class="fab fa-js" aria-hidden="true"></i>
+                    <span>JavaScript</span>
+                </li>
+                <li>
+                    <i class="devicon-jquery-plain"></i>
+                    <span>jQuery</span>
+                </li>
+                <li>
+                    <i class="fab fa-react" aria-hidden="true"></i>
+                    <span>React</span>
+                </li>
+                <li>
+                    <i class="fas fa-cog" aria-hidden="true"></i>
+                    <span>Rest APIs</span>
+                </li>
+                <li>
+                    <i class="fas fa-folder-open" aria-hidden="true"></i>
+                    <span>Firebase</span>
+                </li>
+                <li>
+                    <i class="devicon-git-plain"></i>
+                    <span>Git</span>
+                </li>
+                <li>
+                    <i class="fas fa-search-dollar"></i>
+                    <span>SEO</span>
+                </li>
+                <li>
+                    <i class="fas fa-funnel-dollar"></i>
+                    <span>Sales Funnel Design</span>
+                </li>
+                <li>
+                    <i class="far fa-thumbs-up"></i>
+                    <span>Social Media Marketing</span>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -255,6 +267,8 @@
             </form>
         </div>
     </section>
+
+    </main>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">

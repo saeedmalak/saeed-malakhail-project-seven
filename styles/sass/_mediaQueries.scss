@@ -1,0 +1,245 @@
+// Media Queries
+// Heading Up to Tablet View
+@media (max-width: 1024px) {
+    header {
+        background-position-x: 49%;
+
+        h1 {
+            font-size: 5.9rem;
+            top: 42%;
+        }
+    
+        .headingContainer {
+            width: 550px;
+            height: 650px;
+
+            img {
+                left: 157px;
+            }
+            p {
+                font-size: 4rem;
+            top: 52%;
+            }
+            .headerBtn {
+                left: 12%;
+            }
+        }
+
+    }
+}
+
+// Heading minor breakpoints 
+@media (max-width: 849px) {
+    header {
+
+        h1 {
+            font-size: 4.9rem;
+        }
+    
+        .headingContainer {
+            width: 450px;
+            height: 600px;
+
+            img {
+                left: 125px;
+                width: 200px;
+            }
+            p {
+                font-size: 3rem;
+                left: 15%;
+            }
+            .headerBtn {
+                left: 7%;
+                font-size: 2rem;
+            }
+        }
+
+    }
+} 
+
+// Heading minor breakpoints 
+@media (max-width: 700px) {
+    header {
+        background: url("../assets/tabletBackground.jpg");
+        min-height: 65vh;
+
+        .verticalLineOne {
+            border-left: 1px solid #484848; 
+            height: 10vh; 
+            position:absolute; 
+            left: 50%; 
+            top: 7%;
+        }
+        .verticalLineTwo {
+            border-left: 1px solid #484848; 
+            height: 15vh; 
+            position:absolute; 
+            left: 50%; 
+            bottom: 0%;
+        }
+
+        h1 {
+            font-size: 3.3rem;
+            top: 49%;
+        }
+
+        .headingContainer {
+            width: 400px;
+            height: 400px;
+            background: transparent;
+
+            img {
+                left: 100px;
+            }
+
+            p {
+                font-size: 2.5rem;
+                left: 22%;
+                top: 66%;
+            }
+
+            .headerBtn {
+                left: 21%;
+                top: 75%;
+                font-size: 1.5rem;
+
+                a {
+                    padding: 15px 30px;
+                }
+            }
+
+
+        }
+    }
+}
+// Heading mobile breakpoint
+@media (max-width: 480px) {
+    header {
+        min-height: 55vh;
+
+        h1 {
+            font-size: 2.2rem;
+            top: 47%;
+        }
+
+        .headingContainer {
+
+            img {
+                width: 150px;
+                top: 15%;
+                left: 125px;
+            }
+
+            p {
+                font-size: 2rem;
+                left: 24%;
+                top: 62%;
+            }
+
+            .headerBtn {
+                left: 18%;
+                top: 68%;
+            }
+
+
+        }
+    }
+}
+
+// Services Section breakpoints 
+@media (max-width: 1200px) {
+    .servicesSection .servicesContainer {
+        h3 {
+            font-size: 2.5rem;
+            line-height: 45px;
+        }
+    }
+
+    .servicesSection .skillsContainer ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .servicesSection {
+        background-position-x: 49%;
+    }
+}
+
+@media (max-width: 836px) {
+
+    .servicesSection {
+        background: url("../assets/tabletServicesSection.jpg");
+        background-position-x: 45%;
+    
+        .verticalTabletMobileViews {
+            border-left: 1px solid #484848; 
+            height: 49vh; 
+            position:absolute; 
+            left: 50%; 
+            top: 42%;
+        }
+    }
+
+    .servicesSection .servicesContainer {
+        h3 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .servicesSection {
+        background: url("../assets/tabletBackground.jpg");
+        min-height: 65vh;
+
+        .verticalTabletMobileViews {
+            height: 73vh; 
+            top: 29%;
+        }
+
+        .servicesContainer {
+            grid-template-columns: 1fr;
+
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 655px) {
+    .servicesSection .skillsContainer {
+        margin: 50px 20px 0 20px;
+
+        ul {
+            grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+        }
+
+        ul li i {
+            font-size: clamp(4rem, 3vw, 6rem);
+        }
+
+        ul li span {
+            font-size: 1.5rem;
+            width: 150px;
+        }
+    }
+
+    .servicesSection .verticalTabletMobileViews {
+        height: 41vh; 
+        top: 41%;
+    }
+}
+
+@media (max-width: 586px) { 
+    .servicesSection .verticalTabletMobileViews {
+        display: none;
+    }
+}
+
+
+
+// * {
+//     border: 1px solid red;
+// }

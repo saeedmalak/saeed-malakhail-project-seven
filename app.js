@@ -1,13 +1,3 @@
-// Name space object ----------------------------------
-// const app = {}; 
-
-// Document ready ----------------------------------
-$(function () {
-   
-    
-
-});
-
 // Switch to light or dark theme on clickEvent
 document.addEventListener('click', function (event) {
 

@@ -1,5 +1,5 @@
 header {
-    min-height: 100vh;
+    min-height: 90vh;
     background-image: url("../assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,49 +10,74 @@ header {
     justify-content: center;
     align-items: center;
 
-    .switchThemesBtn {
-        border: none;
-        padding: 0;
-        background-color: transparent;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        min-height: 5vh;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+        background-color: #181818b3;
 
-        i {
-            margin-bottom: 20px;
-            cursor: pointer;
-            padding: 10px 5px;
-            font-size: 3rem;
-            color: #e11416;
-            font-weight: 900;
+
+        .menuContainer {
+            margin-left: 5%;
+
+            img {
+                height: 100%;
+            }
+
         }
+
+        .darkLightContainer {
+            width: 10%;
+            .switchThemesBtn {
+                border: none;
+                padding: 0;
+                background-color: transparent;
+                height: 100%;
+    
+                i {
+                    cursor: pointer;
+                    font-size: 3rem;
+                    color: #e11416;
+                    font-weight: 900;
+                }
+            }
+        }
+
     }
 
-    .headingEmptyContainer {
+    h1 {
         position: absolute;
-        top: 15%;
-        left: 33.3%;
+        top: 40%;
+        z-index: 20;
+        color: #ffffff;
+    }
+
+    .headingContainer {
+        position: relative;
         background-color: #181818;
         opacity: 95%;
         z-index: 10;
         width: 636px;
         height: 708px;
-    }
-
-    .profileContainer {
-        text-align: center;
-        z-index: 20;
-        color: #ffffff;
+    
         img {
             position: absolute;
-            left: 45%;
-            top: 19%;
+            left: 200px;
+            top: 5%;
             width: 236px;
             border-radius: 50%;
         }
 
-        h1 {
-            margin-top: 20%;
-        }
-
         p {
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            color: #ffffff;
             margin-bottom: 40px;
         }
 
@@ -69,7 +94,9 @@ header {
             letter-spacing: 1px;
             font-weight: 700;
             outline: none;
-            position: relative;
+            position: absolute;
+            top: 65%;
+            left: 16%;
             transition: all 0.3s;
         }
 
@@ -98,6 +125,7 @@ header {
         .headerBtn a {
             display: inline-block;
             padding: 25px 80px;
+            color: #ffffff;
         }
 
         .headerBtn a:hover, .headerBtn a:active, .headerBtn a:focus {

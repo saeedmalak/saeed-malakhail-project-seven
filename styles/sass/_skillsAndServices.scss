@@ -1,61 +1,58 @@
 .servicesSection {
-    min-height: 100vh;
+    min-height: 90vh;
     background-image: url("../assets/servicesAndToolsSection.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    scroll-behavior: smooth;
 
     .servicesContainer {
-        position: absolute;
-        top: 20%;
-        left: 10.5%;
         display: grid;
         grid-template-columns: 110px 1fr;
         color: #ffffff;
+        margin-top: 40px;
 
         img {
             margin-top: 25px;
         }
 
-        h3, ul li {
+        h3 {
             font-weight: 500;
         }
 
         h3 {
-            display: inline-block;
             font-size: 3.2rem;
             line-height: 54px;
         }
-
-        .skillsContainer {
-            margin: 50px 0 0 20px;
-        }
-
-        ul {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 40px 50px;
-        }
-
-        ul li {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #cccccc;
-        }
-
-        ul li i {
-            color: #ffffff;
-            font-size: clamp(6rem, 3vw, 6rem);
-        }
-
-        ul li span {
-            color: #ffffff;
-            font-size: 2rem;
-            margin-top: 20px;
-            width: 250px;
-            text-align: center;
-        }
     }
+
+    .skillsContainer {
+            margin: 50px 100px 0 100px;
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 1rem;
+            }
+
+            ul li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #cccccc;
+                font-weight: 500;
+            }
+
+            ul li i {
+                color: #ffffff;
+                font-size: clamp(6rem, 3vw, 6rem);
+            }
+
+            ul li span {
+                color: #ffffff;
+                font-size: 1.8rem;
+                margin-top: 20px;
+                width: 250px;
+                text-align: center;
+            }
+        }
 }
