@@ -11,27 +11,6 @@
     --box-shadow-2: 0 1.5rem 2rem -1rem rgba(36,36,113,0.10);
 }
 
-// MEDIA QUERY MANAGER
-// 1em = 16px
-
-@mixin respond($breakpoint) {
-    @if $breakpoint == tablet-landscape {
-        @media only screen and (max-width: 75em) { @content }; //1200 px
-    }
-    @if $breakpoint == tablet-portrait {
-        @media only screen and (max-width: 63em) { @content }; //1008 px
-    }
-    @if $breakpoint == small-tablet {
-        @media only screen and (max-width: 52.5em) { @content }; //840 px
-    }
-     @if $breakpoint == mobile {
-        @media only screen and (max-width: 41em) { @content }; //656 px
-    }
-    @if $breakpoint == small-mobile {
-        @media only screen and (max-width: 22.5em) { @content }; //360 px
-    }
-}
-
 html {
   font-size: 62.5%;
 }
@@ -46,3 +25,4 @@ img {
   width: 90%;
   margin: 0 auto;
 }
+

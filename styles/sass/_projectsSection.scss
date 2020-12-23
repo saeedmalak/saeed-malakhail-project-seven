@@ -1,9 +1,10 @@
 .projectsSection {
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
-    background-image: url("../assets/projectsSection.jpg");
+    background-image: url("../assets/projectsSectionBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;    
+    position: relative;
     
     .carouselSection {
         display: flex;
@@ -17,20 +18,6 @@
 
         .testimonial__cite--role {
             display: block;
-        }
-
-        @include respond(tablet-landscape) {
-            height: auto;
-        }
-
-        @include respond(tablet-portrait) {
-            padding: 4rem 8rem;
-            background-size: 76%;
-        }
-
-        @include respond(mobile) {
-            padding: 2.4rem;
-            align-items: flex-start;
         }
     }
 }

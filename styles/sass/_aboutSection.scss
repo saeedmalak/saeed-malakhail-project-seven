@@ -1,5 +1,5 @@
 .aboutSection {
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     background-image: url("../assets/aboutSection.jpg");
     background-repeat: no-repeat;
@@ -16,10 +16,10 @@
 
     figure img {
         position: absolute;
-        width: 568.3px;
-        height: 963px;
+        width: 34%;
+        height: 100%;
         object-fit: cover;
-        left: 288px;
+        left: 254px;
         top: 0;
         opacity: 0.8;
         z-index: 20;
