@@ -85,6 +85,7 @@
 
             button:hover, button:focus {
                 background-color: #c4c4c4;
+                cursor: pointer;
             }
         }
     }
@@ -120,6 +121,11 @@
             li {
                 margin-left: 10px;
             }
+        }
+
+        a:hover, a:focus {
+            color: #ffffff;
+            cursor: pointer;
         }
     }
 }

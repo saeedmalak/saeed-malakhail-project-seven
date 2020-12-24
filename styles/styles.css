@@ -871,6 +871,10 @@ header .stylingTitle {
   margin-right: 8px;
 }
 
+.testimonial__cite--name a:hover, .testimonial__cite--name a:focus {
+  color: #ffffff !important;
+}
+
 .testimonial__cite--role {
   font-size: 1.4rem;
   color: #ffffff;
@@ -1140,6 +1144,7 @@ header .stylingTitle {
 
 .contactSection .formSection .formDetails button:hover, .contactSection .formSection .formDetails button:focus {
   background-color: #c4c4c4;
+  cursor: pointer;
 }
 
 .contactSection .getInTouch {
@@ -1180,6 +1185,11 @@ header .stylingTitle {
 
 .contactSection .getInTouch ul li {
   margin-left: 10px;
+}
+
+.contactSection .getInTouch a:hover, .contactSection .getInTouch a:focus {
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -1652,5 +1662,299 @@ header .stylingTitle {
   }
   .aboutSection .bioContainer .roleContainer {
     right: 44%;
+    left: -12%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutSection .bioContainer .bioDescriptionContainer h3 {
+    font-size: 5.2rem;
+    margin: 10px 0 0 0;
+    margin-left: 10%;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer p {
+    font-size: 1.8rem;
+    width: 83%;
+  }
+  .aboutSection {
+    background-position-x: 49%;
+  }
+  .aboutSection figure img {
+    left: 0;
+  }
+  .aboutSection .bioContainer {
+    position: static;
+    left: 34%;
+    margin-left: 254px;
+  }
+  .aboutSection .bioContainer .roleContainer {
+    -ms-grid-columns: 100px 168px;
+        grid-template-columns: 100px 168px;
+    position: static;
+    margin-left: -350px;
+  }
+}
+
+@media (max-width: 857px) {
+  .aboutSection .bioContainer .bioDescriptionContainer h3 {
+    font-size: 4.2rem;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer p {
+    font-size: 1.7rem;
+  }
+  .aboutSection {
+    background-position-x: 49%;
+  }
+  .aboutSection figure img {
+    width: 275px;
+  }
+  .aboutSection .bioContainer {
+    margin-left: 172px;
+  }
+}
+
+@media (max-width: 837px) {
+  .aboutSection {
+    background-image: url("../assets/tabletAboutSection.jpg");
+    background-position-x: 50%;
+  }
+  .aboutSection .bioContainer .roleContainer {
+    margin-left: -314px;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutSection #myPicture {
+    content: url("../assets/aboutMePictureMobile.jpg") !important;
+    width: 100%;
+    height: 40%;
+    -o-object-position: 0 33%;
+       object-position: 0 33%;
+  }
+  .aboutSection h2 {
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer {
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer h3 {
+    margin: 0 auto;
+    width: 83%;
+    line-height: 60px;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer p {
+    font-size: 1.7rem;
+    margin: 0 auto;
+  }
+  .aboutSection {
+    background-position-x: 49%;
+  }
+  .aboutSection figure img {
+    width: 275px;
+    top: 35px;
+  }
+  .aboutSection .bioContainer {
+    position: absolute;
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .aboutSection .roleContainer {
+    margin-left: 0 !important;
+    -ms-grid-columns: 250px !important;
+        grid-template-columns: 250px !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 31% !important;
+  }
+  .aboutSection .roleContainer img {
+    display: none !important;
+  }
+  .aboutSection .roleContainer h4 {
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 579px) {
+  .aboutSection {
+    background-image: url("../assets/tabletBackground.jpg");
+  }
+  .aboutSection #myPicture {
+    height: 37%;
+  }
+  .aboutSection .bioContainer {
+    bottom: 10% !important;
+  }
+  .aboutSection .roleContainer {
+    left: -1% !important;
+    top: 31% !important;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer {
+    bottom: 2% !important;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer h3 {
+    margin: 0 auto;
+    width: 83%;
+    line-height: 50px !important;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer p {
+    line-height: 32px !important;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer p:nth-child(3) {
+    margin-top: 10px !important;
+  }
+}
+
+@media (max-width: 515px) {
+  .aboutSection .bioContainer .bioDescriptionContainer {
+    bottom: -3% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSection .roleContainer {
+    left: -3% !important;
+    top: 32% !important;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer {
+    bottom: -4% !important;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer p {
+    font-size: 1.5rem;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer h3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .aboutSection .bioContainer .bioDescriptionContainer {
+    bottom: -8% !important;
+  }
+}
+
+@media (max-width: 383px) {
+  .aboutSection #myPicture {
+    height: 34%;
+  }
+  .aboutSection .roleContainer {
+    top: 27% !important;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer p {
+    width: 85%;
+    font-size: 1.4rem;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 344px) {
+  .aboutSection .bioContainer .bioDescriptionContainer {
+    bottom: -13% !important;
+  }
+  .aboutSection .bioContainer .bioDescriptionContainer h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contactSection {
+    background-image: url("../assets/contactSmallDesktopBackground.jpg");
+  }
+  .contactSection .formSection h3 {
+    margin: 0 auto;
+  }
+  .contactSection .contactMiddleContainer p {
+    font-size: 16rem;
+  }
+  .contactSection .getInTouch h4, .contactSection .getInTouch p, .contactSection .getInTouch ul li {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 942px) {
+  .contactSection {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 0.5fr 1.5fr;
+        grid-template-rows: 1fr 0.5fr 1.5fr;
+    min-height: 80vh;
+    gap: 0;
+  }
+  .contactSection h2 {
+    left: 44%;
+    padding-top: 25px;
+    font-size: 3rem;
+  }
+  .contactSection .getInTouch {
+    padding: 10rem 0 5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactSection .getInTouch h4, .contactSection .getInTouch p, .contactSection .getInTouch ul li {
+    font-size: 2.2rem;
+  }
+  .contactSection .contactMiddleContainer {
+    margin-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactSection .formSection h3 {
+    margin-bottom: 40px;
+  }
+  .contactSection .formSection .formDetails #name, .contactSection .formSection .formDetails #email, .contactSection .formSection .formDetails #message,
+  .contactSection .formSection .formDetails button {
+    width: 60%;
+  }
+  .contactSection .formSection .formDetails button:hover, .contactSection .formSection .formDetails button:focus {
+    color: red;
+  }
+}
+
+@media (max-width: 642px) {
+  .contactSection .contactMiddleContainer p {
+    font-size: 12rem;
+  }
+  .contactSection h2 {
+    left: 37%;
+  }
+}
+
+@media (max-width: 497px) {
+  .contactSection .contactMiddleContainer p {
+    font-size: 9rem;
+  }
+  .contactSection .formSection .formDetails #name, .contactSection .formSection .formDetails #email, .contactSection .formSection .formDetails #message, .contactSection .formSection .formDetails button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 382px) {
+  .contactSection .contactMiddleContainer p {
+    font-size: 6rem;
+  }
+  .contactSection .getInTouch h4, .contactSection .getInTouch p, .contactSection .getInTouch ul li {
+    font-size: 1.5rem;
+  }
+  .contactSection .formSection h3 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
   }
 }

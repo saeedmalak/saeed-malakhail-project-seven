@@ -531,11 +531,349 @@
 
         .bioContainer .roleContainer {
             right: 44%;
+            left: -12%;
         }
     }
 }
 
+@media (max-width: 1024px) {
 
+    .aboutSection .bioContainer .bioDescriptionContainer {
+        h3 {
+            font-size: 5.2rem;
+            margin: 10px 0 0 0;
+            margin-left: 10%;
+        }
+        p {
+            font-size: 1.8rem;
+            width: 83%;
+        }
+    }
+
+    .aboutSection {
+        background-position-x: 49%;
+
+        figure img {
+            left: 0;
+        }
+
+        .bioContainer {
+            position: static;
+            left: 34%;
+            margin-left: 254px;
+        }
+
+        .bioContainer .roleContainer {
+            grid-template-columns: 100px 168px;
+            position: static;
+            margin-left: -350px;
+        }
+    }
+}
+
+@media (max-width: 857px) {
+
+    .aboutSection .bioContainer .bioDescriptionContainer {
+        h3 {
+            font-size: 4.2rem;
+        }
+        p {
+            font-size: 1.7rem;
+        }
+    }
+
+    .aboutSection {
+        background-position-x: 49%;
+
+        figure img {
+            width: 275px;
+        }
+
+        .bioContainer {
+            margin-left: 172px;
+        }
+    }
+}
+
+@media (max-width: 837px) {
+    .aboutSection {
+        background-image: url("../assets/tabletAboutSection.jpg");
+        background-position-x: 50%;
+
+        .bioContainer .roleContainer {
+            margin-left: -314px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .aboutSection {
+        #myPicture {
+            content: url("../assets/aboutMePictureMobile.jpg") !important;
+            width: 100%;
+            height: 40%;
+            object-position: 0 33%;
+        }
+
+        h2 {
+            margin-left: 0;
+            padding-top: 0;
+        }
+    }
+
+    .aboutSection .bioContainer .bioDescriptionContainer {
+        position: absolute;
+        bottom: 6%;
+        left: 0;
+
+        h3 {
+            margin: 0 auto;
+            width: 83%;
+            line-height: 60px;
+        }
+        p {
+            font-size: 1.7rem;
+            margin: 0 auto;
+        }
+    }
+
+    .aboutSection {
+        background-position-x: 49%;
+
+        figure img {
+            width: 275px;
+            top: 35px;
+        }
+
+        .bioContainer {
+            position: absolute;
+            margin-left: 0;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+
+        .roleContainer {
+            margin-left: 0 !important;
+            grid-template-columns: 250px !important;
+            position: absolute !important;
+            left: 0 !important;
+            top: 31% !important;
+
+            img {
+                display: none !important;
+            }
+
+            h4 {
+                margin: 0 auto !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 579px) {
+    .aboutSection {
+        background-image: url("../assets/tabletBackground.jpg");
+
+        #myPicture {
+            height: 37%;
+        }
+
+        .bioContainer {
+            bottom: 10% !important;
+        }
+
+        .roleContainer {
+            left: -1% !important;
+            top: 31% !important;
+        }
+    }
+
+    .aboutSection .bioContainer .bioDescriptionContainer {
+        bottom: 2% !important;
+
+        h3 {
+            margin: 0 auto;
+            width: 83%;
+            line-height: 50px !important;
+        }
+        p {
+            line-height: 32px !important;
+        }
+        p:nth-child(3) {
+           margin-top: 10px !important; 
+        }
+    }
+}
+
+@media (max-width: 515px) {
+    .aboutSection .bioContainer .bioDescriptionContainer {
+        bottom: -3% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutSection {
+
+        .roleContainer {
+            left: -3% !important;
+            top: 32% !important;
+        }
+        
+        .bioContainer .bioDescriptionContainer {
+            bottom: -4% !important;
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .aboutSection .bioContainer .bioDescriptionContainer {
+        bottom: -8% !important;
+    }
+}
+
+@media (max-width: 383px) {
+    .aboutSection {
+        #myPicture {
+            height: 34%;
+        }
+        .roleContainer {
+            top: 27% !important;
+        }
+        .bioContainer .bioDescriptionContainer {
+            p {
+                width: 85%;
+                font-size: 1.4rem;
+            }
+            h3 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 344px) {
+    .aboutSection .bioContainer .bioDescriptionContainer {
+        bottom: -13% !important;
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+// Contact Section Media Queries 
+@media (max-width: 1100px) {
+    .contactSection {
+        background-image: url("../assets/contactSmallDesktopBackground.jpg");
+        .formSection h3 {
+            margin: 0 auto;
+        }
+        .contactMiddleContainer p {
+            font-size: 16rem;
+        }
+        .getInTouch h4, .getInTouch p, .getInTouch ul li {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 942px) {
+    .contactSection {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 1.5fr;
+        min-height: 80vh;
+        gap: 0;
+
+        h2 {
+            left: 44%;
+            padding-top: 25px;
+            font-size: 3rem;
+        }
+
+        .getInTouch {
+            padding: 10rem 0 5rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h4, p, ul li {
+                font-size: 2.2rem;
+            }
+        }
+
+        .contactMiddleContainer {
+            margin-right: 0;
+            justify-content: center;
+        }
+
+        .formSection {
+
+            h3 {
+                margin-bottom: 40px;
+            }
+
+            .formDetails #name, .formDetails #email, .formDetails #message,
+            .formDetails button {
+                width: 60%;
+            }
+
+            .formDetails button:hover, .formDetails button:focus {
+                color: red;
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 642px) {
+    .contactSection {
+        .contactMiddleContainer p {
+            font-size: 12rem;
+        }
+        h2 {
+            left: 37%;
+        }
+    }
+}
+
+@media (max-width: 497px) {
+    .contactSection {
+        .contactMiddleContainer p {
+            font-size: 9rem;
+        }
+
+        .formSection .formDetails #name, .formSection .formDetails #email, .formSection .formDetails #message, .formSection .formDetails button {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 382px) {
+    .contactSection {
+        .contactMiddleContainer p {
+            font-size: 6rem;
+        }
+
+        .getInTouch h4, .getInTouch p, .getInTouch ul li {
+            font-size: 1.5rem;
+        }
+
+        .formSection h3 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+    }
+}
 
 // * {
 //     border: 1px solid red;

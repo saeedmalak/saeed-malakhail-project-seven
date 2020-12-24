@@ -70,7 +70,7 @@
   &__button:hover &__button-icon {
     stroke: var(--grayish-blue);
   }
-
+  
   &__button:active &__button-icon {
     stroke: var(--dark-grayish-blue);
   }
@@ -118,6 +118,10 @@
       color: #e11416;
       font-weight: 700;
       margin-right: 8px;
+    }
+
+    &--name a:hover, &--name a:focus {
+      color: #ffffff !important;
     }
 
     &--role {
