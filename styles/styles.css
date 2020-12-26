@@ -457,8 +457,29 @@ header .stylingTitle {
   position: relative;
 }
 
-.navOverlayHeaderPage ul {
-  margin-top: 13%;
+.navOverlayHeaderPage .backArrowButton {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  margin-left: 3%;
+}
+
+.navOverlayHeaderPage .wrapper > p:nth-child(2) {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  margin-right: 3%;
+  font-size: 3rem;
+  color: #e11416;
+}
+
+.navOverlayHeaderPage nav {
+  position: unset;
+  background-color: #4e4e4e;
+}
+
+.navOverlayHeaderPage nav ul {
+  margin-left: 4%;
 }
 
 .navOverlayHeaderPage li {
@@ -466,7 +487,7 @@ header .stylingTitle {
 }
 
 .navOverlayHeaderPage a {
-  font-size: 72px;
+  font-size: 7.2rem;
   color: #ffffff;
   font-weight: 700;
 }
@@ -1956,5 +1977,79 @@ header .stylingTitle {
   .contactSection .formSection h3 {
     margin-bottom: 20px;
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navOverlayHeaderPage .getInTouchOverlayPage div {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 1085px) {
+  .navOverlayHeaderPage .getInTouchOverlayPage div {
+    margin-right: 2%;
+  }
+  .wrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 940px) {
+  .navOverlayHeaderPage .getInTouchOverlayPage {
+    position: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .navOverlayHeaderPage ul {
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 790px) {
+  .navOverlayHeaderPage a {
+    font-size: 5.2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .navOverlayHeaderPage a {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navOverlayHeaderPage nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .navOverlayHeaderPage a {
+    font-size: 4rem;
+  }
+  .navOverlayHeaderPage .getInTouchOverlayPage .emailContainer {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .navOverlayHeaderPage a {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .navOverlayHeaderPage .getInTouchOverlayPage p, .navOverlayHeaderPage .getInTouchOverlayPage a {
+    font-size: 1.7rem;
   }
 }

@@ -5,8 +5,29 @@
     background-size: cover;
     position: relative;
 
-    ul {
-        margin-top: 13%;
+    .backArrowButton {
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        margin-left: 3%;
+    }
+
+    .wrapper > p:nth-child(2) {
+        position: absolute;
+        top: 3px;
+        right: 0;
+        margin-right: 3%;
+        font-size: 3rem;
+        color: #e11416;
+    }
+
+    nav {
+        position: unset;
+        background-color: #4e4e4e;
+
+        ul {
+            margin-left: 4%;
+        }
     }
 
     li {
@@ -14,7 +35,7 @@
     }
 
     a {
-        font-size: 72px;
+        font-size: 7.2rem;
         color: #ffffff;
         font-weight: 700;
     }
@@ -72,3 +93,7 @@
     }
 
 }
+
+// * {
+//     border: 1px solid red;
+// }

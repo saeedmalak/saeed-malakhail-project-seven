@@ -875,6 +875,76 @@
     }
 }
 
-// * {
-//     border: 1px solid red;
-// }
+// Navigation Page Media Queries
+@media (max-width: 1200px) {
+    .navOverlayHeaderPage {
+        .getInTouchOverlayPage div {
+            margin-right: 5%;
+        }
+    }
+}
+
+@media (max-width: 1085px) {
+    .navOverlayHeaderPage .getInTouchOverlayPage div {
+        margin-right: 2%;
+    }
+    .wrapper {
+        width: 95%;
+    }
+}
+
+@media (max-width: 940px) {
+    .navOverlayHeaderPage .getInTouchOverlayPage {
+        position: unset;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .wrapper {
+        width: 90%;
+    }
+    .navOverlayHeaderPage ul {
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 790px) {
+    .navOverlayHeaderPage a {
+        font-size: 5.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .navOverlayHeaderPage a {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navOverlayHeaderPage {
+        nav {
+            justify-content: center;
+            text-align: center;
+        }
+        a {
+            font-size: 4rem;
+        }
+        .getInTouchOverlayPage .emailContainer {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .navOverlayHeaderPage a{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .navOverlayHeaderPage .getInTouchOverlayPage{
+        p, a {
+            font-size: 1.7rem;
+        }
+    }
+}
