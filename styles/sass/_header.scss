@@ -1,3 +1,4 @@
+// header section 
 header {
     min-height: 90vh;
     background-image: url("../assets/background.jpg");
@@ -31,21 +32,14 @@ header {
 
         }
 
-        .darkLightContainer {
-            width: 10%;
-            .switchThemesBtn {
-                border: none;
-                padding: 0;
-                background-color: transparent;
-                height: 100%;
-    
-                i {
-                    cursor: pointer;
-                    font-size: 3rem;
-                    color: #e11416;
-                    font-weight: 900;
-                }
-            }
+        p {
+            position: absolute;
+            top: 3px;
+            right: 0;
+            margin-right: 3%;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e11416;
         }
 
     }
@@ -107,7 +101,7 @@ header {
             height: 100%;
             top: 0;
             left: 0;
-            background: var(--button-background);
+            background: #ffffff;
             z-index: -1;
             transition: all 0.3s;
         }
