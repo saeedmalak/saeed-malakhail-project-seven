@@ -946,6 +946,7 @@ header .stylingTitle {
   position: absolute;
   z-index: 30;
   margin-left: 15px;
+  padding-top: 20px;
 }
 
 .aboutSection figure img {
@@ -978,7 +979,7 @@ header .stylingTitle {
           align-items: center;
   position: absolute;
   z-index: 40;
-  top: 20%;
+  top: 7%;
   left: 48%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -990,7 +991,7 @@ header .stylingTitle {
   -ms-grid-columns: 110px 1fr;
       grid-template-columns: 110px 1fr;
   position: absolute;
-  top: 0%;
+  top: 5%;
   left: 0%;
 }
 
@@ -1009,14 +1010,14 @@ header .stylingTitle {
 
 .aboutSection .bioContainer .bioDescriptionContainer h3 {
   font-size: 7.2rem;
-  margin: 30px 0 60px 0;
+  margin: 30px 0 30px 0;
   line-height: 96px;
   color: #e11416;
   font-weight: 700;
 }
 
 .aboutSection .bioContainer .bioDescriptionContainer p {
-  width: 60%;
+  width: 65%;
   margin-left: 10rem;
   font-size: 2rem;
   line-height: 36px;
@@ -1114,6 +1115,11 @@ header .stylingTitle {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.contactSection .formSection .formDetails input::-webkit-input-placeholder, .contactSection .formSection .formDetails textarea::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.7;
 }
 
 .contactSection .formSection .formDetails #name, .contactSection .formSection .formDetails #email, .contactSection .formSection .formDetails #message, .contactSection .formSection .formDetails button {

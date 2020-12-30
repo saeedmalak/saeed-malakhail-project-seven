@@ -55,6 +55,12 @@
             align-items: center;
             flex-wrap: wrap;
 
+            // this was needed below so it works in chrome 
+            input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+                color:white;
+                opacity: 0.7;
+            }
+
             #name, #email, #message, button {
                 font-size: 1.4rem;
                 color: #ffffff;
