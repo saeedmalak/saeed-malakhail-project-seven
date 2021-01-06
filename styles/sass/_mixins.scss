@@ -1,0 +1,20 @@
+// MEDIA QUERY MANAGER
+// 1em = 16px
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == tablet-landscape {
+        @media only screen and (max-width: 88em) { @content }; //1400 px
+    }
+    @if $breakpoint == tablet-portrait {
+        @media only screen and (max-width: 70.31em) { @content }; //1125 px
+    }
+    @if $breakpoint == small-tablet {
+        @media only screen and (max-width: 52.5em) { @content }; //840 px
+    }
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 41em) { @content }; //656 px
+    }
+    @if $breakpoint == small-mobile {
+        @media only screen and (max-width: 22.5em) { @content }; //360 px
+    }
+}

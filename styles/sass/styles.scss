@@ -1,13 +1,14 @@
 // import all styles 
 @import 'setup';
+@import 'mixins';
 @import 'global';
 @import 'typography';
 @import 'header';
 @import 'navOverlayPage';
 @import 'skillsAndServices';
+@import 'projectsSection';
 @import "animations";
 @import "components";
-@import 'projectsSection';
 @import 'aboutSection';
 @import 'contactSection';
 @import 'mediaQueries';

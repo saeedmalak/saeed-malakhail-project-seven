@@ -8,17 +8,27 @@
     position: relative;
     
     .carouselSection {
+        height: 100%;
+        width: 100%;
+        padding: 5rem 0 9.3rem 5rem;
+        
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
 
-        .testimonial__cite a {
-            color: #e11416;
+        @include respond(tablet-landscape) {
+        height: auto;
         }
 
-        .testimonial__cite--role {
-            display: block;
+        @include respond(tablet-portrait) {
+            padding: 4rem 8rem;
+            background-size: 76%;
+        }
+
+        @include respond(mobile) {
+            padding: 2.4rem;
+            align-items: flex-start;
         }
     }
 }

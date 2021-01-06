@@ -1,13 +1,8 @@
-// project carousel section transitions 
 //========== SLIDER ==========
 .slider {
   max-width: 144rem;
   margin-bottom: 2rem;
   padding: 6.3rem 16.5rem;
-  background-image: url(../assets/pattern-bg.svg);
-  background-repeat: no-repeat;
-  background-size: 48.4%;
-  background-position: bottom 0px right 7.3rem;
 
   display: flex;
   justify-content: center;
@@ -15,20 +10,53 @@
   position: relative;
   overflow: hidden;
 
+  @include respond(tablet-landscape) {
+    background-size: 48%;
+  }
+
+  @include respond(tablet-portrait) {
+    padding: 0;
+    background-position: top center;
+    background-size: 62% auto;
+    align-items: flex-start;
+  }
+
+  @include respond(small-tablet) {
+    background-size: 75% auto;
+  }
+
+  @include respond(mobile) {
+    background-size: 100% auto;
+  }
+
   &__slides {
     width: 100%;
     display: flex;
+
+    @include respond(tablet-portrait) {
+      margin-top: 3rem;
+    }
   }
 
   &__slide {
     flex: 1 0 100%;
     margin-right: 21.5rem;
+
+    @include respond(tablet-portrait) {
+      flex: 1 0 100%;
+    }
   }
 
   &__slide-content {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(tablet-portrait) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 
   &__buttons {
@@ -41,11 +69,31 @@
     position: absolute;
     bottom: 6.5%;
     right: 36%;
+
+    @include respond(tablet-landscape) {
+      bottom: 7.5%;
+    }
+
+    @include respond(tablet-portrait) {
+      top: 34vw;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    @include respond(small-tablet) {
+      top: 38vw;
+    }
+
+    @include respond(mobile) {
+      width: 8rem;
+      height: 4rem;
+      top: 74vw;
+    }
   }
 
   &__button {
     flex: 0 0 50%;
-    background-color: #000000;
+    background-color: var(--red);
     cursor: pointer;
 
     &--prev {
@@ -64,16 +112,16 @@
   }
 
   &__button-icon {
-    stroke: #e11416;
+    stroke: #000000;
     transition: stroke 0.2s;
   }
 
   &__button:hover &__button-icon {
-    stroke: var(--grayish-blue);
+    stroke: var(--white);
   }
-  
+
   &__button:active &__button-icon {
-    stroke: var(--dark-grayish-blue);
+    stroke: #000000;
   }
 }
 
@@ -82,63 +130,166 @@
   width: 100%;
 
   &__text {
-    font-size: 2rem;
-    line-height: 36px;
     color: #cccccc;
     background-color: #444444;
-    padding: 15px 60px;
-    font-weight: 500;
+    padding: 20px 20px 0 25px;
     flex: 0 1 57.2%;
-    margin-right: -5.8%;
+    margin-right: 2%;
     z-index: 1;
     position: relative;
+
+    @include respond(tablet-portrait) {
+      order: 1;
+      flex: initial;
+      margin-right: 4rem;
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    @include respond(mobile) {
+      margin-top: 3rem;
+    }
   }
 
   &__quotation-marks {
     position: absolute;
     top: -6.5rem;
     left: 9.5rem;
+
+    @include respond(tablet-portrait) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include respond(mobile) {
+      width: 6rem;
+      height: 5rem;
+      top: -2.5rem;
+    }
+
+    @include respond(small-mobile) {
+      width: 4rem;
+      height: auto;
+      top: -1rem;
+    }
   }
 
   &__quote {
-    font-size: 2rem;
-    line-height: 36px;
-    color: #cccccc;
-    font-weight: 500;
-    width: 89%;
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 1.375;
     margin-bottom: 3.2rem;
+
+    @include respond(tablet-landscape) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(tablet-portrait) {
+      font-size: 3.2rem;
+    }
+
+    @include respond(small-tablet) {
+      font-size: 2.2rem;
+    }
+
+    @include respond(mobile) {
+      font-size: 1.8rem;
+      margin-bottom: 1.9rem;
+    }
+
+    @include respond(small-mobile) {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__cite {
-    font-size: 2rem;
+    font-weight: 700;
+    line-height: 48px;
+    color: #e11416;
     font-style: normal;
 
-    &--name {
-      font-size: 3.2rem;
-      line-height: 48px;
+    a {
       color: #e11416;
-      font-weight: 700;
-      margin-right: 8px;
+      text-decoration: none;
     }
 
-    &--name a:hover, &--name a:focus {
-      color: #ffffff !important;
+    a:hover, a:focus {
+      color: var(--white);
+    }
+
+    @include respond(small-mobile) {
+      line-height: 25px;
+    }
+
+    &--name {
+      font-weight: 700;
+      font-size: 3.2rem;
+
+      @include respond(tablet-landscape) {
+        font-size: 2.4rem;
+        margin-right: 0;
+        display: block;
+      }
+
+      @include respond(tablet-portrait) {
+        font-size: 3.2rem;
+      }
+
+      @include respond(small-tablet) {
+        font-size: 2.2rem;
+        line-height: 2;
+      }
+
+      @include respond(mobile) {
+        font-size: 1.5rem;
+      }
+
+      @include respond(small-mobile) {
+        font-size: 1.2rem;
+      }
     }
 
     &--role {
+      color: var(--white);
       font-size: 1.4rem;
-      color: #ffffff;
-      font-weight: 700;
+
+      @include respond(small-mobile) {
+        font-size: 1rem;
+      }
     }
   }
 
   &__img {
     flex: 0 1 48.65%;
+
+    @include respond(tablet-portrait) {
+      flex: initial;
+      width: 50%;
+    }
+
+    @include respond(small-tablet) {
+      width: 60%;
+    }
+
+    @include respond(mobile) {
+      width: 100%;
+    }
   }
 
   &__photo {
-    width: 90%;
+    width: 100%;
     box-shadow: var(--box-shadow-1);
     border-radius: 5px;
+
+    @include respond(tablet-portrait) {
+      width: 80%;
+    }
+  }
+}
+
+figure.testimonial {
+  @include respond(small-mobile) {
+    margin: 1em 20px;
   }
 }
